@@ -1,3 +1,7 @@
+set hive.input.format=org.apache.hadoop.hive.ql.io.HiveInputFormat;
+set hive.stats.autogather=false;
+add jar hdfs://quickstart.cloudera/user/cloudera/jars/hoodie-hadoop-mr-bundle-0.4.5-SNAPSHOT.hive11.jar;
+
 CREATE EXTERNAL TABLE cgm_cmf.anand_demo(`_row_key`  STRING,
 `_hoodie_commit_time` STRING,
 `_hoodie_commit_seqno` STRING,
